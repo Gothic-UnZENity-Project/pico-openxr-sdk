@@ -335,15 +335,6 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
             InputSystem.InputSystem.RemoveLayout(nameof(PICO4TouchController));
         }
 
-        /// <summary>
-        /// Return device layout string that used for registering device for Input System.
-        /// </summary>
-        /// <returns>Device layout string.</returns>
-        protected override string GetDeviceLayoutName()
-        {
-            return nameof(PICO4TouchController);
-        }
-
         /// <inheritdoc/>
         protected override void RegisterActionMapsWithRuntime()
         {
